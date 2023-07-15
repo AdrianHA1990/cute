@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'Cute_paginas',
     'crispy_forms',
     'crispy_bootstrap5',
+    'proyecto_cute',
     
 ]
 
@@ -74,7 +75,7 @@ SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(SETTINGS_PATH,'templates')],
+        'DIRS': [os.path.join(SETTINGS_PATH,'Cute_paginas/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -82,7 +83,12 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
+                'django.template.context_processors.static',
             ],
+            'loaders':[
+                'django.template.loaders.filesystem.Loader',
+            ]
         },
     },
 ]
@@ -150,7 +156,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS =[
+STATICFILES_DIR =[
 os.path.join(BASE_DIR, 'static')
 ]
 STATIC_ROOT =os.path.join(BASE_DIR, 'staticfiles')
