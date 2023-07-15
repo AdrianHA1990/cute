@@ -30,7 +30,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', '0').lower() in ['true', 't', '1']
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', ' ').split()
+ALLOWED_HOSTS = ['cute-zxmq.onrender.com']
 
 
 
@@ -58,6 +58,7 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -66,7 +67,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'proyecto_cute.urls'
+# ROOT_URLCONF = 'proyecto_cute.urls'
 
 TEMPLATES = [
     {
@@ -151,6 +152,8 @@ STATICFILES_DIR =[
 os.path.join(BASE_DIR, 'static')
 ]
 STATIC_ROOT =os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 
