@@ -7,7 +7,7 @@ from django.contrib.staticfiles.urls import static
 app_name = "app_cute"
 
 urlpatterns = [
-    path('', Inicio.as_view(), name="inicio"),
+    path('inicio/', Inicio.as_view(), name="Paginas_Base/inicio.html"),
     path('cajas/', Cajas.as_view(), name="cajas"),
     path('arreglos/', Arreglos.as_view(), name="arreglos"),
     path('fotos/', Fotos.as_view(), name="fotos"),
