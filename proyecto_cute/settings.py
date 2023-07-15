@@ -75,7 +75,7 @@ SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(SETTINGS_PATH,'templates')],
+        'DIRS': [os.path.join(dirname(dirname(__file__)), '..')+'/templates'],
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
