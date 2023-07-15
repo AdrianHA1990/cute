@@ -68,11 +68,13 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'proyecto_cute.urls'
+SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
+
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'DIRS': [os.path.join(SETTINGS_PATH,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
