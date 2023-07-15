@@ -10,8 +10,8 @@ from .models import Clientes
 # class Inicio(TemplateView):
 #     template_name = 'inicio.html'
 
-def inicio(request):
-        return render(request, 'Paginas_Base/inicio.html', {})
+def Home(request):
+        return render(request, 'home.html', {})
     
 class Cajas(TemplateView):      
     template_name = 'Paginas_Base/cajas.html'    
