@@ -1,0 +1,54 @@
+{% extends 'Paginas_Base/Base.html'%}
+{% load static %}
+
+
+
+
+{% block Content %}
+
+<div class="Inicio">
+  <div class="p-lg-5 mx-auto" data-aos="fade-down" data-aos-duration="2000" >
+    <img class="logo" src="{% static '/images/fondo_logo.png' %}">
+      <h1 class="cobre  my-2" "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cobre y Telurio Gifts</font></font></h1>
+      
+      <a class="btn btn-outline-secondary my-4" href="{% url 'app_cute:contacto' %}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Conócenos</font></font></a>
+      
+    
+  </div>
+  <div class="masvend pt-2 "  data-aos="zoom-in" data-aos-duration="2000">
+    <h1> Lo más vendido </h1>   
+    <hr>
+  </div>
+    
+    
+</div>
+    
+<div class="container-fluid fila" >
+  <div class="row" data-aos="zoom-in" data-aos-duration="2000">
+      <div class="col-lg-4 text-center">
+          <img class="flork" src="{% static '/images/IMG_20230421_225432-01.jpeg' %}">
+              <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Caja Flork</font></font></h2>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Elige entre los diferentes diseños y colores disponibles </font><font style="vertical-align: inherit;"></font></font></p>
+            <p><a class="btn btn-info" href="{% url 'app_cute:flork' %}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ver detalles "</font></font></a></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4 text-center">
+        <img class="flork" src="{% static '/images/IMG_20220916_190435-01.jpg' %}">
+  
+  
+            <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Caja Jersey</font></font></h2>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Personaliza lo como quieras nombre, numero y equipo o deporte favorito </font><font style="vertical-align: inherit;"></font></font></p>
+            <p><a class="btn btn-info" href="{% url 'app_cute:jersey' %}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ver detalles "</font></font></a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4 text-center" >
+              <img class="flork" src="{% static '/images/IMG_20230627_141809-01.jpeg' %}">
+  
+  
+            <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Arreglo con Globo</font></font></h2>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Selecciona el color y pon la frase de tu preferencia</font></font></p>
+            <p><a class="btn btn-info" href="{% url 'app_cute:arregloburbuja' %}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ver detalles"</font></font></a></p>
+          </div><!-- /.col-lg-4 -->
+        </div>
+</div>    
+{% endblock Content %}
+    
