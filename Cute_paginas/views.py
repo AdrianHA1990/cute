@@ -7,11 +7,11 @@ from .models import Clientes
 # Create your views here.
 
 
-class Inicio(TemplateView):
-    template_name = 'inicio.html'
+# class Inicio(TemplateView):
+#     template_name = 'inicio.html'
 
-# def Inicio(request):
-#         return render(request, "inicio.html", {})
+def inicio(request):
+        return render(request, 'Paginas_Base/inicio.html', {})
     
 class Cajas(TemplateView):      
     template_name = 'Paginas_Base/cajas.html'    
