@@ -8,9 +8,9 @@ from .models import Clientes
 
 
 class Inicio(TemplateView):
-    template_name = 'inicio.html'
+    template_name = 'Paginas_Base/inicio.html'
     
-class Cajas(TemplateView):
+class Cajas(TemplateView):      
     template_name = 'Paginas_Base/cajas.html'    
     
 class Arreglos(TemplateView):
