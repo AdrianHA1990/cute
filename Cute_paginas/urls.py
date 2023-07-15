@@ -2,6 +2,7 @@ from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings 
 from Cute_paginas.views import *
+from django.contrib.staticfiles.urls import static
 
 app_name = "app_cute"
 
