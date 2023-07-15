@@ -8,7 +8,7 @@ from . import views
 app_name = "app_cute"
 
 urlpatterns = [
-    path('', views.Inicio.as_view(template_name="Paginas_Base/inicio.html"), name='inicio'),
+    path('', Inicio.as_view(), name='inicio'),
     path('cajas/', Cajas.as_view(), name="cajas"),
     path('arreglos/', Arreglos.as_view(), name="arreglos"),
     path('fotos/', Fotos.as_view(), name="fotos"),
