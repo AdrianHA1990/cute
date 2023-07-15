@@ -9,6 +9,9 @@ from .models import Clientes
 
 class Inicio(TemplateView):
     template_name = 'inicio.html'
+
+# def Inicio(request):
+#         return render(request, "inicio.html", {})
     
 class Cajas(TemplateView):      
     template_name = 'Paginas_Base/cajas.html'    
