@@ -1,0 +1,77 @@
+{% extends 'Paginas_Base/Base.html' %}
+
+{% load static %}
+
+
+{% block  Content %}
+<div class="container-fluid" style="background: linear-gradient(to right bottom, #f8ec81, #86da7f, rgb(104, 126, 197));">
+    <div class="row">
+      <div class="col-md-7 mt-5">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            
+            
+          </div>
+          <div class="carousel-inner" style="width:100%; height: 650px;">
+            <div class="carousel-item active">
+              <img src="{% static '/images/gigante.png' %}" alt="gigante1" class="rounded mx-auto d-block" style="width: 450px; height:550px;">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      <div class="col-md-5 mt-5 text-start d-flex justify-content-around; " >
+        <div class="h5" data-aos="zoom-in" data-aos-duration="2000" style="font-family: 'Times New Roman', Times, serif;">
+
+          <p class="h2">Contiene</p>
+          <ul>
+            <li>2 bolsas de papas / botanas
+            </li>
+            <li>2 bolsas de frituras chicas
+            </li>
+            <li>2 paletas de malvabisco con chocolate. 
+            </li>
+            <li>3 galletas.  
+            </li>
+            <li>3 chocolates.  
+            </li>
+            <li>3 chocolate/dulce grande
+            </li>
+            <li>4 dulces de tamarindo
+            </li>
+            <li>1 Pelón pelo rico o Lucas muecas
+            </li>
+            <li>2 dragonzito
+            </li>
+            <li>1 globo burbuja decorado
+            </li>
+            <li>Elementos decorativos.
+            </li>
+          </ul>
+          <br/>
+          <p class="h2">Modelos disponibles</p>
+          <ul>
+            <li>Se realiza de cualquier color, nombre, temática, personaje y frase. 
+            </li>
+          </ul>
+          <p class="h2">Precios</p>
+            <ul>
+            <li>Arreglo: $370.00</li>
+            </ul> 
+        </div>
+      </div>
+      </div>
+     </div>
+  </div>            
+</div>
+
+
+
+
+{% endblock Content %}

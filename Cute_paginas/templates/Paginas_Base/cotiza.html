@@ -1,0 +1,75 @@
+{% extends 'Paginas_Base/Base.html' %}
+
+{% load static %}
+
+
+{% block Content %}
+<div class="fondoform">
+        
+    <div class="container">
+        <div class="lprin text-center">
+            <br>
+            <br>
+            <p>Entendemos que hayas encontrado el regalo perfecto.</p>
+            <p>Brindanos tus datos, para cotizar el detalle de tu interés.</p>
+            <h3>Nosotros nos comunicamos contigo.</h3>
+        </div>
+    </div>
+ <form method='POST'>
+    {% csrf_token %} 
+    <div class="container-md mt-5 d-flex flex-column align-items-center text-center">
+        <div class="entradas mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Escribe tu nombre completo." style="width: 550px;">
+        </div>
+        <div class="mb-3">
+          <label for="NumeroTel" class="form-label">Teléfono</label>
+          <input type="text" class="form-control" name="telefono" id="NumeroTel" placeholder="Escribe tu numero telefónico" style="width: 550px;">
+        </div>
+        <div class="mb-3">
+            <label for="inputemail" class="form-label">Correo</label>
+            <input type="email" class="form-control" name="correo" id="inputemail" placeholder="Escribe tu correo"  style="width: 550px;" >
+        </div>
+        <!-- botones check   -->
+        <div class="container-md d-flex justify-content-center" >
+            <div class="mb-3 p-3 form-check">
+              <input type="checkbox" name="llamada" class="form-check-input" id="llamada">
+              <label class="form-check-label" for="llamada">Llamada</label>
+            </div>
+            <div class="mb-3 p-3 form-check">
+                <input type="checkbox" name="whatsapp" class="form-check-input" id="whats">
+                <label class="form-check-label" for="whats">WhatsApp</label>
+            </div>
+            <div class="mb-3 p-3 form-check">
+                <input type="checkbox" name="correo" class="form-check-input" id="correo">
+                <label class="form-check-label" for="correo">Correo</label>
+            </div>
+
+        </div>
+        <div class="mb-3">
+            <label for="articulo" class="form-label">Artículo de tu interés</label>
+            <input type="text" class="form-control" name="articulo" id="articulo" placeholder="Escribe el artículo de tu interés" style="width: 550px;" >
+        </div>
+        <div class="mb-3">
+            <label for="especificaciones" class="form-label">Especificaciones</label>
+            <input type="text" class="form-control" name="especificaciones" id="especificaciones" placeholder="Escribe las especificaciones de tu presente" style="width: 550px;" >
+        </div>
+        <p>¿Entrega a domicilio?</p>
+        <div class="mb-3">
+            <label for="direccion" class="form-label">Dirección</label>
+            <input type="text" class="form-control" name="direccion" id="direccion" placeholder="Captura la dirección de tu entrega" style="width: 550px;" >
+        </div>
+        <div class="mb-3">
+            <label for="comentarios">Comentarios</label>
+            <textarea class="form-control" rows="5" id="comentarios" name="comentarios" placeholder="Agregue su comentario" style="width: 550px;"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+</form>
+</div>
+
+
+
+
+
+{% endblock Content %}

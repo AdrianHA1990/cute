@@ -1,0 +1,120 @@
+{% extends 'Paginas_Base/Base.html' %}
+
+{% load static %}
+
+
+
+
+{% block Content %}
+    
+<div class="container-fluid" style="background: linear-gradient(to right bottom, #f8ec81, #86da7f, rgb(104, 126, 197));">
+    <div class="row">
+      <div class="col-md-7 mt-5">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="8"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="9"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="10"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="11"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="12"></button>
+          </div>
+          <div class="carousel-inner" style="width:100%; height: 650px;">
+            <div class="carousel-item active">
+              <img src="{% static '/images/j1.jpeg' %}" alt="jersey1" class="rounded mx-auto d-block" style="width: 450px; height:550px;">
+            </div>
+            <div class="carousel-item ">
+              <img src="{% static '/images/j10.jpeg' %}" alt="jersey10" class="rounded mx-auto d-block" style="width: 450px; height:550px;">
+            </div>
+            <div class="carousel-item ">
+              <img src="{% static '/images/j13.jpeg' %}" alt="jersey13" class="rounded mx-auto d-block" style="width: 450px; height:550px;">
+            </div>
+            <div class="carousel-item ">
+              <img src="{% static '/images/j9.jpeg' %}" alt="jersey9" class="rounded mx-auto d-block" style="width: 450px; height:550px;">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static '/images/j11.jpeg' %}" alt="jersey11" class="rounded mx-auto d-block" style="width: 450px; height:550px;">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static '/images/j7.jpeg' %}" alt="jersey7" class="rounded mx-auto d-block" style="width: 450px; height:550px;">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static '/images/j2.jpg' %}" alt="jersey2" class="rounded mx-auto d-block" style="width: 450px; height:550px;">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static '/images/j3.jpeg' %}" alt="jersey3" class="rounded mx-auto d-block" style="width: 450px; height:550px;">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static '/images/j4.jpeg' %}" alt="jersey4" class="rounded mx-auto d-block" style="width: 450px; height:550px;">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static '/images/j5.jpg' %}" alt="jersey5" class="rounded mx-auto d-block" style="width: 450px; height:550px;">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static '/images/j6.jpeg' %}" alt="jersey6" class="rounded mx-auto d-block" style="width: 450px; height:550px;">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static '/images/j8.jpeg' %}" alt="jersey8" class="rounded mx-auto d-block" style="width: 450px; height:550px;">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static '/images/j12.jpeg' %}" alt="jersey12" class="rounded mx-auto d-block" style="width: 450px; height:550px;">
+            </div>
+    
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      <div class="col-md-5 mt-5 text-start d-flex justify-content-around; " >
+        <div class="h5" data-aos="zoom-in" data-aos-duration="2000" style="font-family: 'Times New Roman', Times, serif;">
+          <p class="h2">Contiene</p>
+          <ul>
+            <li>Dulces, botanas y galletas.
+            </li>
+            <li>Tarjeta dedicatoria personalizada.</li>
+          </ul>
+          <p class="h2">Medidas Aproximadas</p>
+          <ul>
+            <li>31 cm de alto
+            </li>
+            <li>39 cm de ancho (mangas) 
+            </li>
+            <li>22 cm de ancho (base de la camiseta) 
+            </li>
+            <li>8 cm de profundidad 
+            </li>
+          </ul>
+          <p class="h2">Modelos disponibles</p>
+          <ul>
+            <li>Se realiza del equipo, diseño o deporte de tu preferencia. 
+
+            </li>
+          </ul>
+          <p class="h2">Precios</p>
+            <ul>
+              
+              <li>Caja: $160.00</li>
+              <li>Caja Rellena: $200.00</li>
+            </ul> 
+            </div>
+    
+        </div>
+      </div>
+            </div>
+  </div>            
+</div>
+
+
+{% endblock Content %}
+    

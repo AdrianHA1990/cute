@@ -1,0 +1,26 @@
+body{
+    box-sizing: border-box;
+    background-image: url(../images/3_20230706_221725_0002.png);
+    background-size: 100%;
+}
+.iconos i {
+    font-size: 1.5rem;
+    color: blue;   
+    margin-top: 8px;
+    
+
+}
+
+footer p {
+    font-family: 'Fasthand', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    opacity: 0.3;
+    
+}
+
+
+.atras{
+    font-size: 2.5rem;
+    margin-left: 100px;
+}

@@ -1,0 +1,198 @@
+{% extends 'Paginas_Base/Base.html' %} {% load static %} 
+
+
+{% block Content %}
+
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div
+          class="card shadow-sm"
+          data-aos="slide-up"
+          data-aos-duration="3000"
+        >
+          <img
+            src="{% static '/images/basico.jpg' %}"
+            class="rounded img-fluid"
+          />
+          <div class="card-body">
+            <p class="h3 text-center" style="font-family: arial">Arreglo Básico</p>
+            <p class="h4 text-start" style="font-family: times, helvetica">
+              Arreglo de dulces doble
+            </p>
+            <p
+              class="h6 text-start text-wrap"
+              style="font-family: times, helvetica"
+            >
+            Arreglo de dulces, botanas, galletas y chocolates.
+            Incluye letrero con frase personalizada.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="{% url 'app_cute:arreglobasico' %}">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-warning text-dark"
+                  >
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit">Ver más</font></font
+                    >
+                  </button>
+                </a>
+              </div>
+              <small class="text-muted"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"></font></font
+              ></small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div
+          class="card shadow-sm"
+          data-aos="slide-left"
+          data-aos-duration="3000"
+        >
+          <img
+            src="{% static '/images/tematico.jpeg' %}"
+            class="rounded img-fluid"
+          />
+
+          <div class="card-body">
+            <p class="h3 text-center" style="font-family: arial">Arreglo Temático</p>
+            <p class="h4 text-start" style="font-family: times, helvetica">
+              Arreglo personalizado temático
+            </p>
+            <p
+              class="h6 text-start text-wrap"
+              style="font-family: times, helvetica"
+            >
+            Arreglo de dulces, botanas, galletas y chocolates.
+            Incluye letrero con frase personalizada.
+            
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="{% url 'app_cute:arreglotematico' %}">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-warning text-dark"
+                  >
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit">Ver más</font></font
+                    >
+                  </button>
+                </a>
+              </div>
+              <small class="text-muted"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"></font></font
+              ></small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div
+          class="card shadow-sm"
+          data-aos="slide-right"
+          data-aos-duration="3000"
+        >
+          <img
+            src="{% static '/images/gigante.png' %}"
+            class="rounded img-fluid"
+          />
+
+          <div class="card-body">
+            <p class="h3 text-center" style="font-family: arial">
+              Arreglo Burbuja Gigante
+            </p>
+            <p class="h4 text-start" style="font-family: times, helvetica">
+              Arreglo temático gigante con burbuja
+            </p>
+            <p
+              class="h6 text-start text-wrap"
+              style="font-family: times, helvetica"
+            >
+            Arreglo grande de dulces, botanas, galletas y chocolates.
+            Incluye globo burbuja decorado a mano con frase personalizada y sticker.
+            
+            </p>
+
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="{% url 'app_cute:arreglogigante' %}">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-warning text-dark"
+                  >
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit">Ver más</font></font
+                    >
+                  </button>
+                </a>
+              </div>
+              <small class="text-muted"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"></font></font
+              ></small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div
+          class="card shadow-sm"
+          data-aos="slide-up"
+          data-aos-duration="3000"
+        >
+          <img
+            src="{% static '/images/globo.jpeg' %}"
+            class="rounded img-fluid"
+          />
+
+          <div class="card-body">
+            <p class="h3 text-center" style="font-family: arial">
+              Arreglo Burbuja
+            </p>
+            <p class="h4 text-start" style="font-family: times, helvetica">
+              Arreglo con globo transparente
+            </p>
+            <p
+              class="h6 text-start text-wrap"
+              style="font-family: times, helvetica"
+            >
+            Arreglo de dulces, botanas, galletas y chocolates.
+            Incluye globo burbuja decorado a mano con frase personalizada.
+            
+            </p>
+
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="{% url 'app_cute:arregloburbuja' %}">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-warning text-dark"
+                  >
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit">Ver más</font></font
+                    >
+                  </button>
+                </a>
+              </div>
+              <small class="text-muted"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"></font></font
+              ></small>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+  {% endblock Content %}
+

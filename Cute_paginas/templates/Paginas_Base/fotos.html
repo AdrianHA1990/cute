@@ -1,0 +1,244 @@
+{% extends 'Paginas_Base/Base.html' %}
+{% load static %}
+
+
+
+{% block Content %}
+<div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div
+            class="card shadow-sm"
+            data-aos="slide-up"
+            data-aos-duration="3000"
+          >
+            <img
+              src="{% static '/images/fotoC.jpeg' %}"
+              class="rounded img-fluid"
+            />
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial">Polaroid Cuadrada</p>
+              <p class="h4 text-start" style="font-family: times, helvetica">
+                Foto cuadrada con marco blanco 
+              </p>
+              <p
+                class="h6 text-start text-wrap"
+                style="font-family: times, helvetica"
+              >
+              Planilla de 4 fotos 1:1 con marco tipo "polaroid" color blanco.
+              Se imprimen con o sin texto/código spotify. 
+              </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:fotoscuadradas' %}">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-warning text-dark"
+                    >
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">Ver más</font></font
+                      >
+                    </button>
+                  </a>
+                </div>
+                <small class="text-muted"
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit"></font></font
+                ></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card shadow-sm"
+            data-aos="slide-left"
+            data-aos-duration="3000"
+          >
+            <img
+              src="{% static '/images/fotosCC.jpeg' %}"
+              class="rounded img-fluid"
+            />
+  
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial">Polaroid Cuadrada de Color</p>
+              <p class="h4 text-start" style="font-family: times, helvetica">
+                Foto cuadrada con marco de color 
+              </p>
+              <p
+                class="h6 text-start text-wrap"
+                style="font-family: times, helvetica"
+              >
+              Planilla de 4 fotos 1:1 con marco tipo "polaroid" de colores.
+              Se imprimen con o sin texto/código spotify. 
+              </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:fotocolor' %}">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-warning text-dark"
+                    >
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">Ver más</font></font
+                      >
+                    </button>
+                  </a>
+                </div>
+                <small class="text-muted"
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit"></font></font
+                ></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card shadow-sm"
+            data-aos="slide-right"
+            data-aos-duration="3000"
+          >
+            <img
+              src="{% static '/images/fotoI.jpg' %}"
+              class="rounded img-fluid"
+            />
+  
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial">
+                Instax Mini
+              </p>
+              <p class="h4 text-start" style="font-family: times, helvetica">
+                Foto rectangular con marco blanco
+              </p>
+              <p
+                class="h6 text-start text-wrap"
+                style="font-family: times, helvetica"
+              >
+              Planilla de 6 fotos con marco tipo "Instax Mini" blanco.
+              Se imprimen con o sin texto/código spotify.
+              </p>
+  
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:fotoinsta' %}">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-warning text-dark"
+                    >
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">Ver más</font></font
+                      >
+                    </button>
+                  </a>
+                </div>
+                <small class="text-muted"
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit"></font></font
+                ></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card shadow-sm"
+            
+          >
+            <img
+              src="{% static '/images/fotoR.jpeg' %}"
+              class="rounded img-fluid"
+            />
+  
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial">
+                Polaroid Rectangular
+              </p>
+              <p class="h4 text-start" style="font-family: times, helvetica">
+                Foto Rectangular con marco blanco
+              </p>
+              <p
+                class="h6 text-start text-wrap"
+                style="font-family: times, helvetica"
+              >
+              Planilla de 3 fotos con marco tipo "Polaroid" blanco.
+              Se imprimen con o sin texto/código spotify.
+              
+              </p>
+  
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:fotorecta' %}">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-warning text-dark"
+                    >
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">Ver más</font></font
+                      >
+                    </button>
+                  </a>
+                </div>
+                <small class="text-muted"
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit"></font></font
+                ></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div
+              class="card shadow-sm"
+              
+            >
+              <img
+                src="{% static '/images/fCarta.jpeg' %}"
+                class="rounded img-fluid"
+              />
+    
+              <div class="card-body">
+                <p class="h3 text-center" style="font-family: arial">
+                  Tamaño Carta
+                </p>
+                <p class="h4 text-start" style="font-family: times, helvetica">
+                  Foto Rectangular sin marco
+                </p>
+                <p
+                  class="h6 text-start text-wrap"
+                  style="font-family: times, helvetica"
+                >
+                Foto individual tamaño hoja carta.
+                
+                </p>
+    
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="btn-group">
+                    <a href=" {% url 'app_cute:fotocarta' %}">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-warning text-dark"
+                      >
+                        <font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit">Ver más</font></font
+                        >
+                      </button>
+                    </a>
+                  </div>
+                  <small class="text-muted"
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"></font></font
+                  ></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        
+      </div>
+    </div>
+  
+    
+{% endblock Content %}
+    

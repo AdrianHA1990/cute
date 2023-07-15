@@ -1,0 +1,264 @@
+{% extends 'Paginas_Base/Base.html' %}
+{% load static %}
+
+
+{% block Content %}
+<div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm" data-aos="slide-up" data-aos-duration="3000">
+            <img src="{% static '/images/FlorkGirasoles.jpeg' %}" class="rounded img-fluid">
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial;">Caja Flork </p>
+              <p class="h4 text-start" style="font-family: times,helvetica;">Caja flork con letreros </p>
+              <p class="h6 text-start text-wrap" style="font-family: times,helvetica;">Caja rellena de variedad de dulces, botanas, galletas y chocolates. 
+                Incluye letreros ilustrativos con letra de canción o frases para dedicar.</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:flork' %}"><button type="button" class="btn btn-sm btn-outline-warning text-dark""><font style="vertical-align: inherit"><font style="vertical-align: inherit;">Ver más</font></font></button></a>
+                 
+                </div>
+                <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm" data-aos="slide-left" data-aos-duration="3000">
+            <img src="{% static '/images/Guadalajara.jpeg' %}" class="rounded img-fluid">
+
+            
+
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial;">Caja Jersey </p>
+              <p class="h4 text-start" style="font-family: times,helvetica;">Caja camiseta </p>
+              <p class="h6 text-start text-wrap" style="font-family: times,helvetica;">Caja rellena de variedad de dulces, botanas, galletas y chocolates. 
+                Incluye nombre y número personalizado en la parte trasera.  </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:jersey' %}"><button type="button" class="btn btn-sm btn-outline-warning text-dark"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ver más</font></font></button></a>
+                </div>
+                <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm"  data-aos="slide-up" data-aos-duration="3000">
+
+            <img src="{% static '/images/snoopy.jpeg' %}" class="rounded img-fluid">
+
+           
+
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial;">Caja Dulcero </p>
+              <p class="h4 text-start" style="font-family: times,helvetica;">Caja dulcero con ventana </p>
+              <p class="h6 text-start text-wrap" style="font-family: times,helvetica;">Caja rellena de variedad de dulces, botanas, galletas y chocolates. 
+                Incluye juego de calcomanías correspondientes a la temática de la caja. 
+                  </p>
+              
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:dulcero' %}"><button type="button" class="btn btn-sm btn-outline-warning text-dark"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ver más</font></font></button></a>
+                  
+                </div>
+                <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="{% static '/images/lunchs.jpeg' %}" class="rounded img-fluid">
+            
+
+            
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial;">Lunch Box </p>
+              <p class="h4 text-start" style="font-family: times,helvetica;">Caja dulcero tipo lonchera</p>
+              <p class="h6 text-start text-wrap" style="font-family: times,helvetica;">Caja rellena de variedad de dulces, botanas, galletas y chocolates. 
+                Acabado Glossy. 
+                  </p>
+              
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:lunchbox' %}"><button type="button" class="btn btn-sm btn-outline-warning text-dark"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ver mas</font></font></button></a>
+                  
+                </div>
+                <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="{% static '/images/Cajafotos.jpeg' %}" class="rounded img-fluid">
+
+            
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial;">Caja Fotos </p>
+              <p class="h4 text-start" style="font-family: times,helvetica;">Caja con fotos desplegables</p>
+              <p class="h6 text-start text-wrap" style="font-family: times,helvetica;">
+                Caja rellena de variedad de dulces, botanas, galletas y chocolates. 
+                Incluye listón con fotos tipo polaroid calidad fotografica. 
+                
+                  </p>
+              
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:cajafotos' %}"><button type="button" class="btn btn-sm btn-outline-warning text-dark"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ver más</font></font></button></a>
+                 
+                </div>
+                <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="{% static '/images/CajaHexagonal.jpeg' %}" class="rounded img-fluid">
+            
+
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial;">Caja Hexagonal </p>
+              <p class="h4 text-start" style="font-family: times,helvetica;">Caja tipo cortina con dedicatorias</p>
+              <p class="h6 text-start text-wrap" style="font-family: times,helvetica;">
+                Caja rellena de variedad de dulces, botanas, galletas y chocolates. 
+                Incluye paredes de dedicatorias personalizadas con texto y fotos. 
+                
+                  </p>
+             
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:cajahex'%}"><button type="button" class="btn btn-sm btn-outline-warning text-dark"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ver mas</font></font></button></a>
+                 
+                </div>
+                <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="{% static '/images/logo.jpeg' %}" class="rounded img-fluid">
+            
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial;">Caja Logo </p>
+              <p class="h4 text-start" style="font-family: times,helvetica;">Caja en forma de logo o personaje</p>
+              <p class="h6 text-start text-wrap" style="font-family: times,helvetica;">
+                Caja rellena de variedad de dulces, botanas, galletas y chocolates. 
+                Incluye tarjeta dedicatoria personalizada 
+                
+                  </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:logo' %}"><button type="button" class="btn btn-sm btn-outline-warning  text-dark"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ver más</font></font></button></a>
+                  
+                  
+                </div>
+                <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="{% static '/images/figurasLetereros.jpeg' %}" class="rounded img-fluid">
+
+            
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial;">Figura con Letreros </p>
+              <p class="h4 text-start" style="font-family: times,helvetica;">Caja personalizada con letreros</p>
+              <p class="h6 text-start text-wrap" style="font-family: times,helvetica;">
+                Caja rellena de variedad de dulces, botanas, galletas y chocolates. 
+                Incluye letreros desplegables personalizados. 
+                  </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:cajalet' %}"><button type="button" class="btn btn-sm btn-outline-warning text-dark"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ver más</font></font></button></a>
+                </div>
+                <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="{% static '/images/letra.jpeg' %}" class="rounded img-fluid">
+            
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial;">Caja Letra </p>
+              <p class="h4 text-start" style="font-family: times,helvetica;">Caja dulcero en forma de letra</p>
+              <p class="h6 text-start text-wrap" style="font-family: times,helvetica;">
+                Caja rellena de variedad de dulces, botanas, galletas y chocolates.
+
+                  </p>
+            
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:letra' %}"><button type="button" class="btn btn-sm btn-outline-warning text-dark"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ver más</font></font></button></a>
+                </div>
+                <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></small>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="{% static '/images/Conejo.jpeg' %}" class="rounded img-fluid">
+            
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial;">Caja Dulcero Figuras </p>
+              <p class="h4 text-start" style="font-family: times,helvetica;">Caja en forma de figuras con ventana</p>
+              <p class="h6 text-start text-wrap" style="font-family: times,helvetica;">
+                Caja rellena de variedad de dulces, botanas, galletas y chocolates
+
+                  </p>
+            
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:figuradul' %}"><button type="button" class="btn btn-sm btn-outline-warning text-dark"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ver más</font></font></button></a>
+                </div>
+                <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></small>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="{% static '/images/figPer.jpeg' %}" class="rounded img-fluid">
+            
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial;">Caja Figura Personalizada </p>
+              <p class="h4 text-start" style="font-family: times,helvetica;">Caja personalizada personajes</p>
+              <p class="h6 text-start text-wrap" style="font-family: times,helvetica;">
+                Caja rellena de variedad de dulces, botanas, galletas y chocolates. 
+                Incluye tarjeta dedicatoria personalizada. 
+
+
+                  </p>
+            
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:figurapersonal' %}"><button type="button" class="btn btn-sm btn-outline-warning text-dark"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ver más</font></font></button></a>
+                </div>
+                <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></small>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+{% endblock Content %}

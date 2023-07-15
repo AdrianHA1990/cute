@@ -1,0 +1,86 @@
+{% extends 'Paginas_Base/Base.html' %}
+
+{% load static %}
+
+
+{% block  Content %}
+<div class="container-fluid" style="background: linear-gradient(to right bottom, #f8ec81, #86da7f, rgb(104, 126, 197));">
+    <div class="row">
+      <div class="col-md-7 mt-5">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            
+            
+            
+          </div>
+          <div class="carousel-inner" style="width:100%; height: 650px;">
+            <div class="carousel-item active">
+              <img src="{% static '/images/rpan.jpeg' %}" alt="ramopan1" class="rounded mx-auto d-block" style="width: 450px; height:550px;">
+            </div>
+            <div class="carousel-item ">
+              <img src="{% static '/images/rpan2.jpeg' %}" alt="ramopan22" class="rounded mx-auto d-block" style="width: 450px; height:550px;">
+            </div>
+            <div class="carousel-item ">
+              <img src="{% static '/images/rpan1.jpeg' %}" alt="ramopan3" class="rounded mx-auto d-block" style="width: 450px; height:550px;">
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      <div class="col-md-5 mt-5 text-start d-flex justify-content-around; " >
+        <div class="h5" data-aos="zoom-in" data-aos-duration="2000" style="font-family: 'Times New Roman', Times, serif;">
+          <p class="h2">Contiene</p>
+          <ul>
+            <li>6 piezas de pan dulce variado
+            </li>
+            <li>1 café frío / jugo / leche de sabor 
+            </li>
+            <li>Moño listón
+            </li>
+            <li>Fotografías Impresas en papel glossy
+            </li>
+            <li>Tarjeta dedicatoria personalizada 
+            </li>
+            
+          </ul>
+          <br/>
+          <p class="h2">Caracteristicas</p>
+          <ul>
+            <li>Ramo hecho de cartulina gruesa. 
+            </li>
+            <li>Cada bizcocho se envuelve en celofán para mayor higiene. 
+            </li>
+            <li>Armado con palitos de madera. 
+            </li>
+          </ul> 
+          <p class="h2">Modelos disponibles</p>
+          <ul>
+            <li>Se realiza de cualquier color, temática, nombre, frases, etc. 
+            </li>
+          </ul>
+          <p class="h2">Precios</p>
+          <ul>
+            <li>$210.00
+            </li>
+          </ul>
+        </div>
+    
+        </div>
+      </div>
+            </div>
+  </div>            
+</div>
+
+
+
+
+{% endblock Content %}

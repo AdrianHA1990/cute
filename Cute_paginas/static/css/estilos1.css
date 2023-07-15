@@ -1,0 +1,101 @@
+.logo{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+
+}
+
+.flork{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+
+.Inicio{
+    box-sizing: border-box;
+    background-color: rgb(242, 248, 184);
+    text-align: center;
+    padding: 20px;
+}
+.fila{
+    background-color: rgb(242, 248, 184);
+    display: flex;
+    justify-content: space-between;
+
+}
+.navbar {
+    
+    background-color: rgba(197, 225, 253, 0.911);
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.cobre{
+    font-family: 'Fasthand', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+}
+
+.nav-link {
+    
+    font-family:'Times New Roman', Times, serif;
+    color: blue;
+
+    
+}
+
+.nav-item{
+    font-size: 1.6rem;
+    margin-left: 30px;
+    transition: all 0.5 ease-in;
+}
+
+.nav-item:hover{
+    background-color: rgba(78, 103, 156, 0.884);
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 556px) {
+    .navbar-brand{
+        display: none;
+    }
+    
+}
+
+span{
+    color: black;
+    font-family: 'Fasthand', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Lobster', cursive;
+    transition: all 0.2 ease-in;
+}
+
+span:hover{
+    color: white;
+}
+.entradas input{
+    width: 250px;
+}
+
+.fondoform{
+    background-color: rgb(242, 248, 184);
+}
+.lprin p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-style: bold;
+    margin: -5px;
+}
+
+.lprin h3{
+    margin-top: 25px;
+    font-family: 'Fasthand', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    
+}

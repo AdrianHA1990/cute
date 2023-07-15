@@ -1,0 +1,384 @@
+{% extends 'Paginas_Base/Base.html' %}
+
+{% load static %}
+
+
+{% block Content %}
+<div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div
+            class="card shadow-sm"
+            data-aos="slide-up"
+            data-aos-duration="3000"
+          >
+            <img
+              src="{% static '/images/ramo.jpeg' %}"
+              class="rounded img-fluid"
+            />
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial">Ramo De Mariposas</p>
+              <p class="h4 text-start" style="font-family: times, helvetica">
+                Ramo eterno de mariposas con led
+              </p>
+              <p
+                class="h6 text-start text-wrap"
+                style="font-family: times, helvetica"
+              >
+              Ramo de mariposas acabado Glossy. 
+              Diferentes tamaños.
+              Incluye tira de luz con pilas  
+              </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:mariposas' %}">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-warning text-dark"
+                    >
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">Ver más</font></font
+                      >
+                    </button>
+                  </a>
+                </div>
+                <small class="text-muted"
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit"></font></font
+                ></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card shadow-sm"
+            data-aos="slide-left"
+            data-aos-duration="3000"
+          >
+            <img
+              src="{% static '/images/RamoP.jpeg' %}"
+              class="rounded img-fluid"
+            />
+  
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial">Ramo Personalizado</p>
+              <p class="h4 text-start" style="font-family: times, helvetica">
+                Ramo eterno personalizado con led
+              </p>
+              <p
+                class="h6 text-start text-wrap"
+                style="font-family: times, helvetica"
+              >
+              Ramo de figuras personalizadas acabado Glossy. 
+              Diferentes tamaños.
+              Incluye tira de luz led con pilas  
+              </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:ramoper' %}">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-warning text-dark"
+                    >
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">Ver más</font></font
+                      >
+                    </button>
+                  </a>
+                </div>
+                <small class="text-muted"
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit"></font></font
+                ></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card shadow-sm"
+            data-aos="slide-right"
+            data-aos-duration="3000"
+          >
+            <img
+              src="{% static '/images/Popup.jpeg' %}"
+              class="rounded img-fluid"
+            />
+  
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial">
+                Libro Pop Up
+              </p>
+              <p class="h4 text-start" style="font-family: times, helvetica">
+                Cancionero 3D personalizado
+              </p>
+              <p
+                class="h6 text-start text-wrap"
+                style="font-family: times, helvetica"
+              >
+              Libro con letra de canción para dedicar. 
+              Incluye figuras, alusivas a las frases escritas, con efecto 3D al pasar de página. 
+              </p>
+  
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:popup' %}">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-warning text-dark"
+                    >
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">Ver más</font></font
+                      >
+                    </button>
+                  </a>
+                </div>
+                <small class="text-muted"
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit"></font></font
+                ></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card shadow-sm"
+            data-aos="zoom-out-rigth"
+            data-aos-duration="3000"
+          >
+            <img
+              src="{% static '/images/globos.jpeg' %}"
+              class="rounded img-fluid"
+            />
+  
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial">
+                Globo Burbuja
+              </p>
+              <p class="h4 text-start" style="font-family: times, helvetica">
+                Globo transparente
+              </p>
+              <p
+                class="h6 text-start text-wrap"
+                style="font-family: times, helvetica"
+              >
+              Burbuja decorada a mano, con sticker y frase personalizada.
+              Base y popote de color.  
+              </p>
+  
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:globoper' %}">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-warning text-dark"
+                    >
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">Ver más</font></font
+                      >
+                    </button>
+                  </a>
+                </div>
+                <small class="text-muted"
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit"></font></font
+                ></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card shadow-sm"
+            data-aos="zoom-in-left"
+            data-aos-duration="3000"
+          >
+            <img
+              src="{% static '/images/globoled.jpeg' %}"
+              class="rounded img-fluid"
+            />
+  
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial">
+                Globo Led
+              </p>
+              <p class="h4 text-start" style="font-family: times, helvetica">
+                Globo transparente
+              </p>
+              <p
+                class="h6 text-start text-wrap"
+                style="font-family: times, helvetica"
+              >
+              Burbuja decorada a mano, con sticker y frase personalizada.
+              Incluye tira de luz led con pilas 
+              </p>
+  
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:globoled' %}">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-warning text-dark"
+                    >
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">Ver más</font></font
+                      >
+                    </button>
+                  </a>
+                </div>
+                <small class="text-muted"
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit"></font></font
+                ></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card shadow-sm"
+            data-aos="zoom-out-up"
+            data-aos-duration="3000"
+          >
+            <img
+              src="{% static '/images/ramopan.jpeg' %}"
+              class="rounded img-fluid"
+            />
+  
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial">
+                Ramo Pan
+              </p>
+              <p class="h4 text-start" style="font-family: times, helvetica">
+                Arreglo de comestibles
+              </p>
+              <p
+                class="h6 text-start text-wrap"
+                style="font-family: times, helvetica"
+              >
+              Ramo de 6 piezas de pan dulce y bebida. 
+              Incluye moño, fotos y tarjeta dedicatoria personalizada. 
+ 
+              </p>
+  
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:ramopan' %}">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-warning text-dark"
+                    >
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">Ver más</font></font
+                      >
+                    </button>
+                  </a>
+                </div>
+                <small class="text-muted"
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit"></font></font
+                ></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card shadow-sm"
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+          >
+            <img
+              src="{% static '/images/charola.jpeg' %}"
+              class="rounded img-fluid"
+            />
+  
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial">
+                Charola De Desayuno
+              </p>
+              <p class="h4 text-start" style="font-family: times, helvetica">
+                Arreglo de comestibles
+              </p>
+              <p
+                class="h6 text-start text-wrap"
+                style="font-family: times, helvetica"
+              >
+              Caja tipo charola decorada con frases y banderines personalizados.
+              Incluye pan dulce, galletas, yogur y bebidas.  
+              </p>
+  
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:desayuno' %}">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-warning text-dark"
+                    >
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">Ver más</font></font
+                      >
+                    </button>
+                  </a>
+                </div>
+                <small class="text-muted"
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit"></font></font
+                ></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card shadow-sm"
+            data-aos="zoom-out"
+            data-aos-duration="3000"
+          >
+            <img
+              src="{% static '/images/porta.jpeg' %}"
+              class="rounded img-fluid"
+            />
+  
+            <div class="card-body">
+              <p class="h3 text-center" style="font-family: arial">
+                Portaretratos Floral
+              </p>
+              <p class="h4 text-start" style="font-family: times, helvetica">
+                Caja con flores y tira led
+              </p>
+              <p
+                class="h6 text-start text-wrap"
+                style="font-family: times, helvetica"
+              >
+              Caja tipo portaretrato temático "Spotify" con flores y luz led. 
+              Incluye pergamino con letra de canción y chocolates.   
+              </p>
+  
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'app_cute:porta' %}">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-warning text-dark"
+                    >
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">Ver más</font></font
+                      >
+                    </button>
+                  </a>
+                </div>
+                <small class="text-muted"
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit"></font></font
+                ></small>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+{% endblock Content %}

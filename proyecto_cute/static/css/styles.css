@@ -1,0 +1,46 @@
+.logo{
+    border-radius: 50%;
+
+}   
+
+.navbar {
+    padding: 1rem;
+    background-color: rgba(197, 225, 253, 0.911);
+}
+
+.navbar-collapse {
+    align-items: start;
+    justify-content: start;
+    margin-left: 20px;
+    
+}
+
+.nav-link {
+    
+    padding: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    
+}
+
+.nav-item{
+    font-size: 1.4rem;
+    margin-left: 40px;
+    transition: all 0.4 ease-in-out;
+}
+.navbar-nav {
+    color: blueviolet;
+    
+}
+
+.nav-item:hover{
+    background-color: rgba(78, 103, 156, 0.884);
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 556px) {
+    .navbar-brand{
+        display: none;
+    }
+    
+}
