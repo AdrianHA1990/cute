@@ -4,10 +4,11 @@ from django.conf import settings
 from Cute_paginas.views import *
 from django.contrib.staticfiles.urls import static
 from . import views
+
 app_name = "app_cute"
 
 urlpatterns = [
-    path('', views.Inicio.as_view(), name="inicio"),
+    path('', Inicio.as_view(), name="inicio"),
     path('cajas/', Cajas.as_view(), name="cajas"),
     path('arreglos/', Arreglos.as_view(), name="arreglos"),
     path('fotos/', Fotos.as_view(), name="fotos"),
