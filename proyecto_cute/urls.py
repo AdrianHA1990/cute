@@ -22,6 +22,6 @@ from Cute_paginas.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(' ', include('Cute_paginas.urls'),),
+    path('', include('Cute_paginas.urls'),),
     
 ]

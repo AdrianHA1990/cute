@@ -47,7 +47,6 @@ INSTALLED_APPS = [
     'Cute_paginas',
     'crispy_forms',
     'crispy_bootstrap5',
-    'proyecto_cute',
     
 ]
 
