@@ -38,7 +38,7 @@ def Cotiza(request):
           comen = request.POST.get('comentarios')
           clien = Clientes(nombre=nom, telefono=tel, correo=cor, articulo=art, especificaciones=esp, direccion=dire, comentarios=comen)
           clien.save()
-          return redirect('app_cute:inicio')
+          return redirect('app_cute:home')
         return render(request, 'Paginas_Base/cotiza.html',)
 
 
